@@ -205,3 +205,16 @@ add this to the file
     name = Your username
     email = Your email
 ```
+
+### update on last commit
+
+```bash
+git commit --amend --author="New Author Name <new.author@example.com>" --no-edit   
+```
+
+### update for current repository
+
+```bash
+git config user.name "New Author Name"
+git config user.email "new.author@example.com"   
+```
