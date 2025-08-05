@@ -218,3 +218,19 @@ git commit --amend --author="New Author Name <new.author@example.com>" --no-edit
 git config user.name "New Author Name"
 git config user.email "new.author@example.com"   
 ```
+
+### change author of entire repository
+
+```bash
+GIT_AUTHOR_NAME="Correct Name" \
+GIT_AUTHOR_EMAIL="correct.email@example.com" \
+GIT_COMMITTER_NAME="Correct Name" \
+GIT_COMMITTER_EMAIL="correct.email@example.com" \
+  git commit --amend --no-edit
+```
+
+then
+
+```bash
+git push --force origin <your-branch>
+```
