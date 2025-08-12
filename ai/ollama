@@ -1,0 +1,27 @@
+# Ollama AI (local docker)
+
+## Management
+
+### Pull a model into a docker container
+
+```bash
+docker exec -it ai-container-name ollama pull ollama-model
+```
+
+### Remove a model
+
+```bash
+docker exec -it ai-container-name ollama rm ollama-model-name
+```
+
+### See available commands of AI container
+
+```bash
+docker exec -it ai-container-name ollama --help
+```
+
+## restart docker containers
+
+```bash
+sudo systemctl restart docker
+```
